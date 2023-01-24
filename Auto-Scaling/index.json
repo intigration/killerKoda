@@ -1,0 +1,18 @@
+{
+    "title": "Orion AutoScale",
+    "description": "Let's Scale",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "text": "step.md"
+        }
+      ]
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
+  
