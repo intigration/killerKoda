@@ -1,0 +1,37 @@
+{
+    "title": "scaling-demo-steps",
+    "description": "Multiple steps can have foreground and background scripts",
+    "details": {
+      "intro": {
+        "title": "Intro",
+        "text": "intro.md"
+    
+      },
+      "steps": [
+        {
+          "title": "deploy/custom-metrics-server",
+          "text": "deploy/custom-metrics-server/text.md",
+          "foreground": "deploy/custom-metrics-server/foreground.sh",
+          "background": "deploy/custom-metrics-server/background.sh",
+          "verify": "deploy/custom-metrics-server/verify.sh"
+        },
+        {
+          "title": "metrics-app",
+          "text": "deploy/metrics-app/text.md",
+          "foreground": "deploy/metrics-app/foreground.sh",
+          "background": "deploy/metrics-app/background.sh",
+          "verify": "deploy/metrics-app/verify.sh"
+        }
+      ],
+      "finish": {
+        "title": "Finish",
+        "text": "finish/text.md",
+        "foreground": "finish/foreground.sh",
+        "background": "finish/background.sh"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
+  
