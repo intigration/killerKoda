@@ -1,6 +1,6 @@
 {
-    "title": "Foreground Background Scripts Multi Steps",
-    "description": "Multiple steps can have foreground and background scripts",
+    "title": "Continous Scale",
+    "description": "Scaling strategy",
     "details": {
       "intro": {
         "title": "Intro",
