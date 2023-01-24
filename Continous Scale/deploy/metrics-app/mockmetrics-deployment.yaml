@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mockmetrics-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mockmetrics
+  template:
+    metadata:
+      labels:
+        app: mockmetrics
+    spec:
+      containers:
+      - name: mockmetrics
+        image: docker.io/bhavin192/mockmetrics:latest
+        ports:
+        - containerPort: 8080

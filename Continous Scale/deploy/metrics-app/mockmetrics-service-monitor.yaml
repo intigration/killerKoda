@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: mockmetrics-sm
+  labels:
+    release: mon
+spec:
+  jobLabel: mockmetrics
+  selector:
+    matchLabels:
+      app: mockmetrics-app
+  endpoints:
+  - port: metrics-svc-port
+    interval: 10s
+    path: /metrics
