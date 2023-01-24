@@ -1,0 +1,37 @@
+{
+    "title": "Foreground Background Scripts Multi Steps",
+    "description": "Multiple steps can have foreground and background scripts",
+    "details": {
+      "intro": {
+        "title": "Intro",
+        "text": "intro.md"
+    
+      },
+      "steps": [
+        {
+          "title": "custom-metrics-server",
+          "text": "custom-metrics-server/text.md",
+          "foreground": "custom-metrics-server/foreground.sh",
+          "background": "custom-metrics-server/background.sh",
+          "verify": "custom-metrics-server/verify.sh"
+        },
+        {
+          "title": "metrics-app",
+          "text": "metrics-app/text.md",
+          "foreground": "metrics-app/foreground.sh",
+          "background": "metrics-app/background.sh",
+          "verify": "metrics-app/verify.sh"
+        }
+      ],
+      "finish": {
+        "title": "Finish",
+        "text": "finish/text.md",
+        "foreground": "finish/foreground.sh",
+        "background": "finish/background.sh"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
+  
