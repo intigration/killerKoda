@@ -1,37 +1,35 @@
 {
-    "title": "Foreground Background Scripts Multi Steps",
-    "description": "Multiple steps can have foreground and background scripts",
-    "details": {
-      "intro": {
-        "title": "Intro",
-        "text": "intro.md"
-    
-      },
-      "steps": [
-        {
-          "title": "custom-metrics-server",
-          "text": "custom-metrics-server/text.md",
-          "foreground": "custom-metrics-server/foreground.sh",
-          "background": "custom-metrics-server/background.sh",
-          "verify": "custom-metrics-server/verify.sh"
-        },
-        {
-          "title": "metrics-app",
-          "text": "metrics-app/text.md",
-          "foreground": "metrics-app/foreground.sh",
-          "background": "metrics-app/background.sh",
-          "verify": "metrics-app/verify.sh"
-        }
-      ],
-      "finish": {
-        "title": "Finish",
-        "text": "finish/text.md",
-        "foreground": "finish/foreground.sh",
-        "background": "finish/background.sh"
-      }
-    },
-    "backend": {
-      "imageid": "ubuntu"
-    }
-  }
-  
+	"title": "Continous Scale",
+	"description": "Scaling strategy",
+	"details": {
+		"intro": {
+			"title": "Intro",
+			"text": "intro.md"
+
+		},
+		"steps": [{
+				"title": "custommetricsserver",
+				"text": "custommetricsserver/text.md",
+				"foreground": "custommetricsserver/foreground.sh",
+				"background": "custommetricsserver/background.sh",
+				"verify": "custommetricsserver/verify.sh"
+			},
+			{
+				"title": "metricsapp",
+				"text": "metricsapp/text.md",
+				"foreground": "metricsapp/foreground.sh",
+				"background": "metricsapp/background.sh",
+				"verify": "metricsapp/verify.sh"
+			}
+		],
+		"finish": {
+			"title": "Finish",
+			"text": "finish/text.md",
+			"foreground": "finish/foreground.sh",
+			"background": "finish/background.sh"
+		}
+	},
+	"backend": {
+		"imageid": "kubernetes-kubeadm-1node"
+	}
+}
