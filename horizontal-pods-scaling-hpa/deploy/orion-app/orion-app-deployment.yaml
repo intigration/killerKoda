@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orion-app-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orion-app
+  template:
+    metadata:
+      labels:
+        app: orion-app
+    spec:
+      containers:
+      - name: orion-app
+        image: docker.io/bhavin192/mockmetrics:latest
+        ports:
+        - containerPort: 8080

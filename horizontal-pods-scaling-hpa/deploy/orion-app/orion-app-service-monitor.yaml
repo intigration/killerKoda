@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: orion-app-sm
+  labels:
+    release: mon
+spec:
+  jobLabel: orion-app
+  selector:
+    matchLabels:
+      app: orion-app-app
+  endpoints:
+  - port: metrics-svc-port
+    interval: 10s
+    path: /metrics
