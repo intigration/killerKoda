@@ -37,26 +37,28 @@ rules:
 
 ```
 
-> Add the helm repo:
+> Add the helm chart:
 
 ```plain
 helm repo add stable https://charts.helm.sh/stable
 ```{{exec}}
 
-> update the chart repo:
+> Next step is to update the chart:
 
 ```plain
 helm repo update
 ```{{exec}}
 
 
-> Create the namespace
+> Create the namespace named "monitoring"
 
 ```plain
-kubectl create namespace monitoring```{{exec}}
+kubectl create namespace monitoring
+```{{exec}}
 
 > Simply install the repo
 ```plain
 helm install mon \
       --namespace monitoring \
-      prometheus-community/kube-prometheus-stack```{{exec}}
+      prometheus-community/kube-prometheus-stack
+      ```{{exec}}

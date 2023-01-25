@@ -1,0 +1,1 @@
+alias orion='kubectl'
