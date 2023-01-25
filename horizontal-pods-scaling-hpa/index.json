@@ -12,14 +12,14 @@
       },
       "steps": [
         {
-          "title": "custom-metrics-server",
+          "title": "deploy-simulation-server",
           "text": "deploy/custom-metrics-server/text.md",
           "foreground": "deploy/custom-metrics-server/foreground.sh",
           "background": "deploy/custom-metrics-server/background.sh",
           "verify": "deploy/custom-metrics-server/verify.sh"
         },
         {
-          "title": "orion-app",
+          "title": "deploy-orion-app",
           "text": "deploy/orion-app/text.md",
           "foreground": "deploy/orion-app/foreground.sh",
           "background": "deploy/orion-app/background.sh",
