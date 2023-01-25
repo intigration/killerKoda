@@ -8,6 +8,12 @@ In this demo we will deploy an ORION app  orion-app which will generate a count 
 
 
 ## Installing Prometheus Operator and Prometheus
+
+ ```plain
+  git clone https://github.com/infracloudio/kubernetes-autoscaling.git
+  cd kubernetes-autoscaling
+  ```
+  {{exec}}
 Now, we will install [kube-prometheus-stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) chart. It will deploy [Prometheus Operator](https://github.com/coreos/prometheus-operator) and create an instance of Prometheus using it.
 
 - Add prometheus-community Helm repository and create `monitoring` namespace.
