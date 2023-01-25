@@ -1,5 +1,5 @@
 {
-  "title": "Network Traffic Kubernetes",
+  "title": "Analyze Traffic",
   "description": "Access services running inside a Kubernetes environment",
   "details": {
     "intro": {

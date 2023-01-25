@@ -1,5 +1,5 @@
 {
-  "title": "Kubernetes 2node multi-step verification",
+  "title": "MultipleNodes",
   "description": "Uses a two node Kubernetes cluster and performs user input verification in all steps",
   "details": {
     "intro": {
