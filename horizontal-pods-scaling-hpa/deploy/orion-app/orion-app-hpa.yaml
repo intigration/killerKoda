@@ -1,0 +1,19 @@
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: orion-app-app-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: orion-app-deploy
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+  - type: Object
+    object:
+      target:
+        kind: Service
+        name: orion-app-service
+      metricName: total_hit_count
+      targetValue: 100
