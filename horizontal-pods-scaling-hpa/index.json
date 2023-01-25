@@ -26,8 +26,8 @@
       "finish": {
         "title": "Finish",
         "text": "deploy/finish/text.md",
-        "foreground": "deploy/finish/foreground.sh",
-        "background": "deploy/finish/background.sh"
+        "foreground": "finish/foreground.sh",
+        "background": "finish/background.sh"
       }
     },
     "backend": {
